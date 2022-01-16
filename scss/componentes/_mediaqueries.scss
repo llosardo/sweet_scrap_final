@@ -1,0 +1,69 @@
+@media screen and (min-width:768px) {
+    /*****************Home***********************/
+     h1 {
+         font-size: 3rem;
+         text-align: center;
+     }
+     h2 {
+         font-size: 2rem;
+         text-align: center;
+     }
+     nav {
+         position: sticky;
+         top: 1rem;
+         flex-direction: row;
+         justify-content: space-between;
+         ul  {
+            li {
+             display: inline-block;
+        }
+     }
+    }
+ 
+     .header {
+         font-size: 1rem;
+         background-image: url("../imagenes/header.png") ;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+     }
+     .columnas {
+        flex-direction: row;
+        justify-content: space-between;       
+     }
+     footer {      
+         flex-direction: row;
+         justify-content:space-between;
+         footer ul li {
+            display: inline-block;
+            justify-content: space-between;
+             }
+     }
+     
+
+ 
+ /*****************quienes somos***********************/
+ 
+     .headerquienes {
+         font-size: 1rem;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+     }
+     
+ /*****************productos***********************/
+    
+     .grid-container {
+         margin: 5rem;
+         
+         display: grid;
+         grid-gap: 2px;
+         justify-items: center;
+         align-items: center;
+         grid-template-areas:
+         "imagen1 imagen2 imagen4"
+         "imagen1 imagen2 imagen4"
+         "imagen1 imagen2 imagen5"
+         "imagen3 imagen2 imagen6";
+     }
+ }

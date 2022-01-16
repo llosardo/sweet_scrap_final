@@ -1,0 +1,178 @@
+@charset "UTF-8";
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  footer ul li {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 10px; }
+
+.header {
+  text-align: center;
+  padding: 2rem;
+  background-color: "$color-header"; }
+  .header section {
+    justify-content: center;
+    align-items: center; }
+
+h1 {
+  padding-top: 2rem;
+  bottom: 1rem; }
+
+h2 {
+  color: white; }
+
+h3 {
+  color: #D90416;
+  text-align: center;
+  padding: 50px; }
+
+img {
+  border-radius: 50px; }
+
+.ubicaimagen {
+  align-content: center; }
+
+.medidaCarousel {
+  padding: 1rem 1rem 20rem 1rem; }
+
+.columnas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  padding: 50px 100px 50px 100px; }
+
+main {
+  padding: 10rem 2rem 10rem 2rem; }
+  main section {
+    justify-content: center;
+    align-items: center; }
+
+/*****************diseños***********************/
+.bordesredondeados, .bordesredondeados-general {
+  border-radius: 50px;
+  transition: all 1s; }
+  .bordesredondeados hover, .bordesredondeados-general hover {
+    transform: scale(1.1); }
+
+/**************** mapa ***************/
+.repuesto-agenda {
+  color: #3b5998; }
+
+.repuesto-cuaderno {
+  color: #E1306C; }
+
+.repuesto-organizador {
+  color: #11a55b; }
+
+/*****************quienes somos***********************/
+.position {
+  display: flex;
+  align-items: center; }
+
+.bordesredondeados, .bordesredondeados-general {
+  border-radius: 50px; }
+
+/*****************EXTEND***********************/
+.bordesredondeados-general {
+  border: solid #D90416;
+  padding: 20px 10px 10px 10px;
+  margin: 20px; }
+
+.texto {
+  margin: 50px 50px 50px 50px;
+  font-weight: bold; }
+
+/*************Mixins ************/
+.info {
+  width: 50px;
+  margin: 50px;
+  padding-bottom: 30px; }
+
+/*****************productos***********************/
+.TablaUbicacion {
+  display: flex;
+  align-content: flex-start; }
+
+.titulotabla {
+  display: inline-block; }
+
+.grid-container {
+  /* margin: 10rem; */
+  display: grid;
+  grid-gap: 2px;
+  justify-items: center;
+  grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4" "imagen5" "imagen6"; }
+
+.imagen1 {
+  grid-area: imagen1; }
+
+.imagen2 {
+  grid-area: imagen2; }
+
+.imagen3 {
+  grid-area: imagen3; }
+
+.imagen4 {
+  grid-area: imagen4; }
+
+.imagen5 {
+  grid-area: imagen5; }
+
+.imagen6 {
+  grid-area: imagen6; }
+
+.imagenes {
+  padding: 2rem;
+  margin: 2rem;
+  justify-content: center; }
+
+@media screen and (min-width: 768px) {
+  /*****************Home***********************/
+  h1 {
+    font-size: 3rem;
+    text-align: center; }
+  h2 {
+    font-size: 2rem;
+    text-align: center; }
+  nav {
+    position: sticky;
+    top: 1rem;
+    flex-direction: row;
+    justify-content: space-between; }
+    nav ul li {
+      display: inline-block; }
+  .header {
+    font-size: 1rem;
+    background-image: url("../imagenes/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .columnas {
+    flex-direction: row;
+    justify-content: space-between; }
+  footer {
+    flex-direction: row;
+    justify-content: space-between; }
+    footer footer ul li {
+      display: inline-block;
+      justify-content: space-between; }
+  /*****************quienes somos***********************/
+  .headerquienes {
+    font-size: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  /*****************productos***********************/
+  .grid-container {
+    margin: 5rem;
+    display: grid;
+    grid-gap: 2px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "imagen1 imagen2 imagen4" "imagen1 imagen2 imagen4" "imagen1 imagen2 imagen5" "imagen3 imagen2 imagen6"; } }
